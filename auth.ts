@@ -53,7 +53,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   theme: { logo: "https://authjs.dev/img/logo-sm.png" },
   adapter: UnstorageAdapter(storage),
   providers: [
-    GitHub
+    GitHub,
+    Okta
   ],
   basePath: "/auth",
   session: { strategy: "jwt" },
