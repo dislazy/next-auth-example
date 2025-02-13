@@ -54,7 +54,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   adapter: UnstorageAdapter(storage),
   providers: [
     GitHub,
-    Okta
+    Auth0
   ],
   basePath: "/auth",
   session: { strategy: "jwt" },
